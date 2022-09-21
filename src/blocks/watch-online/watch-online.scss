@@ -1,0 +1,57 @@
+.watch-online {
+  display: flex;
+  justify-content: center;
+  height: 43.75rem;
+  background-color: #1C2023;
+  background-image: url('/images/watch-background.jpg');
+  background-size: 100rem auto;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+}
+
+.watch-online__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 72.5rem;
+  padding-top: 5.375rem;
+}
+
+.watch-online__header {
+  position: relative;
+  width: 21.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  span {
+    position: relative;
+    font-family: $font-main-bold;
+    font-size: 6.6563rem;
+    font-style: normal;
+    line-height: 0.77;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .color-yellow {
+    color: #FFEE2E;
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -4rem;
+    left: -8rem;
+    width: 29.0625rem;
+    height: 29.0625rem;
+    border-radius: 50%;
+    background-color: #FB853B;
+  }
+}
+
+.watch-online__button {
+  margin-top: 3.75rem;
+}

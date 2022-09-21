@@ -1,0 +1,57 @@
+include ../../components/pet-card/pet-card
+
+section.pets
+  .pets__wrapper
+    .pets__container
+
+      button.button.button-round-prev.pets__prev-button
+        img(src="/images/arrow-icon.svg", alt="")
+
+      .pets__slider
+
+        +pet-card({
+          image: './images/pet-image-1.jpg',
+          name: 'giant Pandas',
+          region: 'Native to Southwest China',
+          food: 'banana-bamboo'
+        })
+
+        +pet-card({
+          image: './images/pet-image-2.jpg',
+          name: 'giant Pandas',
+          region: 'Native to Southwest China',
+          food: 'meet-fish'
+        })
+
+        +pet-card({
+          image: './images/pet-image-3.jpg',
+          name: 'giant Pandas',
+          region: 'Native to Southwest China',
+          food: 'banana-bamboo'
+        })
+
+        +pet-card({
+          image: './images/pet-image-4.jpg',
+          name: 'giant Pandas',
+          region: 'Native to Southwest China',
+          food: 'banana-bamboo'
+        })
+
+        +pet-card({
+          image: './images/pet-image-5.jpg',
+          name: 'giant Pandas',
+          region: 'Native to Southwest China',
+          food: 'meet-fish'
+        })
+
+        +pet-card({
+          image: './images/pet-image-6.jpg',
+          name: 'giant Pandas',
+          region: 'Native to Southwest China',
+          food: 'meet-fish'
+        })
+
+      button.button.button-round-next.pets__prev-button
+        img(src="/images/arrow-icon.svg", alt="")
+
+    button.button.button-primary.pets__button choose your favorite

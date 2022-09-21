@@ -1,0 +1,30 @@
+footer.footer
+  .footer__wrapper
+    .footer__part-top
+      a(href="#").footer__logo-link
+        img(src="./images/site-logo.png", alt="").footer__logo-image
+
+      include ../../components/form-subscribe/form-subscribe
+
+    .footer__part-middle
+      button.button.button-primary.footer__donate-button donate for volunteers
+
+    .footer__part-bottom
+
+      include ../../components/social-links/social-links
+
+      nav.footer-nav
+        ul.footer-nav__list
+          li.footer-nav__item
+            a(href="").footer-nav__link.active About
+          li.footer-nav__item
+            a(href="").footer-nav__link Map
+          li.footer-nav__item
+            a(href="").footer-nav__link Zoos
+          li.footer-nav__item
+            a(href="").footer-nav__link Contact us
+
+      .footer__copyright
+        a(href="").footer__copyright-link Designed by Alisa Samborskaya
+        a(href="").footer__copyright-link ©RSSchool & ©Yem Digital 2021
+

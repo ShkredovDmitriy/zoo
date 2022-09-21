@@ -1,0 +1,10 @@
+mixin testimonial-card(props)
+  .testimonial-card
+    .testimonial-card__wrapper
+      .testimonial-card__header
+        .testimonial-card__avatar
+          img(src=props.avatar, alt="")
+        .testimonial-card__user-data
+          .testimonial-card__user-name=props.name
+          .testimonial-card__user-location=props.location
+      .testimonial-card__content!=props.content

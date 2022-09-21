@@ -1,0 +1,59 @@
+.pet-card {
+  margin: 0.625rem 0.9375rem;
+  width: 22.875rem;
+  height: 26.625rem;
+  padding: 0.0625rem;
+  background-image: url('/images/pet-card-frame.svg');
+  background-size: contain;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.pet-card__image {
+  width:  22.75rem;
+  height: 22.75rem;
+  border-top-left-radius: 0.2813rem;
+  border-top-right-radius: 0.2813rem;
+  overflow: hidden;
+
+  img {
+    display: block;
+    width:  22.75rem;
+    height: 22.75rem;
+    border-top-left-radius: 0.2813rem;
+    border-top-right-radius: 0.2813rem;
+  }
+}
+
+.pet-card__content {
+  height: 3.75rem;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  background-repeat: no-repeat;
+
+  &.banana-bamboo {
+    background-image: url('/images/banana-bamboo_icon.svg');
+    background-position: calc(100% - 0.8125rem) 0.625rem;
+  }
+
+  &.meet-fish {
+    background-image: url('/images/meet-fish_icon.svg');
+    background-position: calc(100% - 0.5rem) 0.5rem;
+  }
+}
+
+.pet-card__name {
+  font-family: $font-main-medium;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.pet-card__region {
+  font-family: $font-main-regular;
+  font-size: 0.9375rem;
+  line-height: 1.2;
+  color: #000;
+}

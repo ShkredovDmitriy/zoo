@@ -1,0 +1,7 @@
+mixin pet-card(props)
+  .pet-card
+    .pet-card__image
+      img(src=props.image, alt="")
+    .pet-card__content(class=props.food)
+      .pet-card__name=props.name
+      .pet-card__region=props.region

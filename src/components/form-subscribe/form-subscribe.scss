@@ -1,0 +1,42 @@
+.form-subscribe__title {
+  font-family: $font-main-regular;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.form-subscribe__row {
+  margin-top: 0.875rem;
+  display: flex;
+}
+
+.form-subscribe__input {
+  width: 14.25rem;
+  height: 2.625rem;
+  padding-left: 0.625rem;
+  padding-right: 0.4375rem;
+  border: 1px solid #F9804B;
+  border-radius: 0.125rem;
+  background-color: transparent;
+  font-family: $font-main-regular;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #BDBDBD;
+
+  &::placeholder {
+    opacity: 1;
+  }
+}
+
+.form-subscribe__submit {
+  margin-left: 0.625rem;
+  width: 8.0625rem;
+  height: 2.625rem;
+  border: 1px solid #4B9200;
+  border-radius: 0.3125rem;
+  background-color: #F1F3F2;
+  font-family: $font-main-regular;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #4B9200;
+}
