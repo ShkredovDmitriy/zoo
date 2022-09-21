@@ -15,7 +15,6 @@ const paths = {
   src: path.resolve(__dirname, 'src'),
   dist: path.resolve(__dirname, 'dist'),
   images: path.resolve(__dirname, 'src/assets/images'),
-  libs: path.resolve(__dirname, 'src/app/libs'),
 };
 
 function generateHtmlPlugins() {
@@ -35,7 +34,7 @@ const htmlPlugins = generateHtmlPlugins();
 module.exports = (env) => {
   return {
     mode: 'production',
-    entry: './src/app/main.ts',
+    entry: './src/app/main.js',
     output: {
       path: paths.dist,
       filename: 'js/main.min.js?[fullhash]',
@@ -51,10 +50,6 @@ module.exports = (env) => {
           {
             from: paths.images,
             to: 'images',
-          },
-          {
-            from: paths.libs,
-            to: 'js',
           },
         ],
       }),
