@@ -1,0 +1,70 @@
+form(action="").form-feed
+
+  .form-feed__amount Amount
+  .form-feed__radio-line
+
+    label
+      input(type="radio" name="feedSumma").form-feed__radio-input
+      .form-feed__pick-area
+        svg.form-feed__pick-area-icon
+          use(href="#pick-area-icon")
+      .form-feed__summa 2000
+
+    label
+      input(type="radio" name="feedSumma").form-feed__radio-input
+      .form-feed__pick-area
+        svg
+          use(href="#pick-area-icon")
+      .form-feed__summa 1000
+
+    label
+      input(type="radio" name="feedSumma").form-feed__radio-input
+      .form-feed__pick-area
+        svg
+          use(href="#pick-area-icon")
+      .form-feed__summa 500
+
+    label
+      input(type="radio" name="feedSumma").form-feed__radio-input
+      .form-feed__pick-area
+        svg
+          use(href="#pick-area-icon")
+      .form-feed__summa 250
+
+    label
+      input(type="radio" name="feedSumma").form-feed__radio-input
+      .form-feed__pick-area
+        svg
+          use(href="#pick-area-icon")
+      .form-feed__summa 100
+
+    label
+      input(type="radio" name="feedSumma").form-feed__radio-input
+      .form-feed__pick-area
+        svg
+          use(href="#pick-area-icon")
+      .form-feed__summa 50
+
+    label
+      input(type="radio" name="feedSumma").form-feed__radio-input
+      .form-feed__pick-area
+        svg
+          use(href="#pick-area-icon")
+      .form-feed__summa 25
+
+
+  .form-feed__input-container
+    input(type="number" name="summa" min="0.01" max="9999" maxlength="4" placeholder="Another amount").form-feed__input
+    svg
+      use(href="#dollar-icon")
+
+  .form-feed__radio-container
+    label.form-feed__checkbox
+      input(type="radio" name='period')
+      span.icon
+      span.name Monthly
+
+    label.form-feed__checkbox
+      input(type="radio" name='period')
+      span.icon
+      span.name Once

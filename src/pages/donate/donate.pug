@@ -1,0 +1,19 @@
+extends ../../templates/index
+
+include ../../blocks/header/header
+include ../../blocks/footer/footer
+
+block variables
+    - var title = 'ds-webpack5-starter'
+    - var pageClass = 'index-page'
+
+block content
+  +header({
+    donateLink: 'active'
+  })
+  include ../../blocks/pet-photo/pet-photo
+  include ../../blocks/information/information
+  +footer({
+    donateLink: 'active'
+  })
+
