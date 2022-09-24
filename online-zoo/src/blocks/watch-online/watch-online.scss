@@ -15,7 +15,8 @@
   align-items: flex-end;
   width: 100%;
   max-width: 72.5rem;
-  padding-top: 5.375rem;
+  padding-top: 5rem;
+  padding-right: 5rem;
 }
 
 .watch-online__header {
@@ -30,7 +31,8 @@
     font-family: $font-main-bold;
     font-size: 6.6563rem;
     font-style: normal;
-    line-height: 0.77;
+    line-height: 0.75;
+    letter-spacing: 0.0125rem;
     color: #fff;
     text-transform: uppercase;
   }
@@ -43,8 +45,8 @@
     content: "";
     display: block;
     position: absolute;
-    top: -4rem;
-    left: -8rem;
+    top: -4.25rem;
+    left: -9.5625rem;
     width: 29.0625rem;
     height: 29.0625rem;
     border-radius: 50%;
@@ -53,5 +55,6 @@
 }
 
 .watch-online__button {
-  margin-top: 3.75rem;
+  margin-top: 4.125rem;
+  margin-right: 1.1875rem;
 }

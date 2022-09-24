@@ -1,6 +1,10 @@
 .testimonials {
   display: flex;
   justify-content: center;
+  background-image: url('/images/testimonials_decor.png');
+  background-size: 15.4375rem auto;
+  background-position: calc(50% + 42.25rem) calc(100% + 8.3125rem);
+  background-repeat: no-repeat;
 }
 
 .testimonials__wrapper {
@@ -20,7 +24,7 @@
 
 .scroll__control {
   margin-top: 1.3125rem;
-  width: 599px;
+  width: 37.5rem;
   height: 8px;
   padding: 1px;
   border-radius: 5px;

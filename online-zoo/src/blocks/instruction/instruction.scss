@@ -19,6 +19,39 @@
   border-radius: 20px;
 }
 
+.instruction__title-h2 {
+  margin-bottom: 2rem;
+  color: #FE9013;
+}
+
+.instruction__title-h3 {
+  margin-top: 3.75rem;
+}
+
+.instruction__subtitle {
+  margin-bottom: 2.5rem;
+  width: 100%;
+  padding-left: 6.1875rem;
+  padding-right: 6.1875rem;
+}
+
+.instruction__attention {
+  margin-bottom: 0.625rem;
+  width: 100%;
+  padding-left: 6.1875rem;
+  padding-right: 1rem;
+  font-family: $font-main-medium;
+  font-size: 1rem;
+  line-height: 1.3;
+  color: #333B41;
+}
+
+.instruction__text-normal {
+  width: 100%;
+  padding-left: 6.1875rem;
+  padding-right: 10.1875rem;
+}
+
 
 .instruction__text-normal {
   a {
@@ -52,8 +85,8 @@
 
 .instruction-step {
   width: 10.5rem;
-  margin-left: 4.0625rem;
-  margin-right: 4.0625rem;
+  // margin-left: 4.0625rem;
+  // margin-right: 4.0625rem;
 }
 
 .instruction-step__image {
@@ -74,4 +107,18 @@
 
 .instruction__button {
   margin-top: 3.75rem;
+}
+
+.instruction-step-arrow {
+  margin-top: 3.75rem;
+  margin-left: 1.875rem;
+  margin-right: 1.875rem;
+  width: 4.4375rem;
+  height: 2.3125rem;
+
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 }

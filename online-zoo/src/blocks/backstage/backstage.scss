@@ -1,6 +1,10 @@
 .backstage {
   display: flex;
   justify-content: center;
+  background-image: url('/images/backstage-decor.png');
+  background-size: 12.75rem auto;
+  background-position: calc(50% + 43.625rem) 0.6875rem;
+  background-repeat: no-repeat;
 }
 
 .backstage__wrapper {
@@ -8,6 +12,7 @@
   width: 100%;
   max-width: 72.5rem;
   padding-top: 8.75rem;
+  padding-bottom: 5rem;
 }
 
 .backstage__image {

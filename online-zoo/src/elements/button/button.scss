@@ -25,6 +25,7 @@
 }
 
 .button-round-prev, .button-round-next {
+  margin-bottom: 0.875rem;
   width: 3.875rem;
   height: 3.875rem;
   border-radius: 50%;
@@ -38,11 +39,11 @@
 }
 
 .button-round-prev {
-  margin-right: 1.25rem;
+  margin-right: 1.1875rem;
 }
 
 .button-round-next {
-  margin-left: 1.25rem;
+  margin-left: 1.1875rem;
 
   img {
     transform: rotateY(180deg)
