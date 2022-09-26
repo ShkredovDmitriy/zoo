@@ -2,7 +2,9 @@ mixin header(props)
   header.header
     .header__wrapper
       a.header__logo-link(href="./")
-        img.header__logo-image(src="./images/site-logo.png", alt="")
+        h1.header__title PetStory online
+        svg
+          use(href="#leaf-icon")
       nav.header__nav
         ul.header-nav__list
           li.header-nav__item
