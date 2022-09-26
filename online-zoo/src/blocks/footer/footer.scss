@@ -18,9 +18,48 @@
 }
 
 .footer__logo-link {
+  position: relative;
   display: block;
   width: 5.125rem;
   height: 3.25rem;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  transition: 0.3s;
+
+  &:hover {
+    border-color: #F9804B;
+
+    .footer__logo-title {
+      color: #F9804B;
+    }
+
+    svg {
+      fill: #F9804B;
+    }
+  }
+
+  svg {
+    display: block;
+    position: absolute;
+    top: 24px;
+    left: 10px;
+    width: 0.75rem;
+    height: 1.25rem;
+    fill: #fff;
+    transition: fill 0.3s;
+  }
+}
+
+.footer__logo-title {
+  display: block;
+  font-family: $font-main-regular;
+  font-size: 1.1881rem;
+  line-height: 1.2;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  transition: color 0.3s;
 }
 
 .footer__logo-image {

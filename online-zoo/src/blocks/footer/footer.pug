@@ -2,13 +2,16 @@ mixin footer(props)
   footer.footer
     .footer__wrapper
       .footer__part-top
-        a(href="#").footer__logo-link
-          img(src="./images/site-logo.png", alt="").footer__logo-image
+        a(href="./").footer__logo-link
+          span.footer__logo-title PetStory online
+          svg
+            use(href="#leaf-icon")
 
         include ../../components/form-subscribe/form-subscribe
 
       .footer__part-middle
-        button.button.button-primary.footer__donate-button donate for volunteers
+        a(href="./donate.html").button.button-primary.footer__donate-button
+          span donate for volunteers
 
       .footer__part-bottom
 
@@ -27,5 +30,5 @@ mixin footer(props)
 
         .footer__copyright
           a(href="").footer__copyright-link Designed by Alisa Samborskaya
-          a(href="").footer__copyright-link ©RSSchool & ©Yem Digital 2021
+          a(href="https://rs.school" target="_blank").footer__copyright-link ©RSSchool & ©Yem Digital 2021
 
