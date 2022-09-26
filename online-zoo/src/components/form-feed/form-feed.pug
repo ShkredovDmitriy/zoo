@@ -22,7 +22,7 @@ form(action="").form-feed
           use(href="#dollar-icon")
 
     label
-      input(type="radio" name="feedSumma" checked="true").form-feed__radio-input
+      input(type="radio" name="feedSumma" id="feedSumma1000").form-feed__radio-input
       .form-feed__pick-area
         svg
           use(href="#pick-area-icon")
@@ -77,7 +77,7 @@ form(action="").form-feed
 
 
   .form-feed__input-container
-    input(type="number" name="summa" min="0.01" max="9999" maxlength="4" placeholder="Another amount").form-feed__input
+    input(type="number" name="summa" min="1" max="9999" maxlength="4" placeholder="Another amount" required).form-feed__input
     svg
       use(href="#dollar-icon")
 
@@ -88,6 +88,6 @@ form(action="").form-feed
       span.name Monthly
 
     label.form-feed__checkbox
-      input(type="radio" name='period' id="feedOnce" checked="true")
+      input(type="radio" name='period' id="feedOnce")
       span.icon
       span.name Once

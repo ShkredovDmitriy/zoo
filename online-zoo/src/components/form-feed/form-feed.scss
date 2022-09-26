@@ -151,6 +151,19 @@
     color: #929699;
     opacity: 1;
   }
+
+  &.error {
+    border-color: #D31414;
+    color: #D31414;
+
+    &::placeholder {
+      color: #D31414;
+    }
+  }
+
+  &.error + svg {
+    fill: #D31414;
+  }
 }
 
 .form-feed__radio-container {
