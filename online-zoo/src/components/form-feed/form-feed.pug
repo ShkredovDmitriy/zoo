@@ -8,14 +8,27 @@ form(action="").form-feed
       .form-feed__pick-area
         svg.form-feed__pick-area-icon
           use(href="#pick-area-icon")
-      .form-feed__summa 2000
+      .form-feed__summa 5000
+        svg
+          use(href="#dollar-icon")
 
     label
       input(type="radio" name="feedSumma").form-feed__radio-input
       .form-feed__pick-area
         svg
           use(href="#pick-area-icon")
+      .form-feed__summa 2000
+        svg
+          use(href="#dollar-icon")
+
+    label
+      input(type="radio" name="feedSumma" checked="true").form-feed__radio-input
+      .form-feed__pick-area
+        svg
+          use(href="#pick-area-icon")
       .form-feed__summa 1000
+        svg
+          use(href="#dollar-icon")
 
     label
       input(type="radio" name="feedSumma").form-feed__radio-input
@@ -23,6 +36,8 @@ form(action="").form-feed
         svg
           use(href="#pick-area-icon")
       .form-feed__summa 500
+        svg
+          use(href="#dollar-icon")
 
     label
       input(type="radio" name="feedSumma").form-feed__radio-input
@@ -30,6 +45,8 @@ form(action="").form-feed
         svg
           use(href="#pick-area-icon")
       .form-feed__summa 250
+        svg
+          use(href="#dollar-icon")
 
     label
       input(type="radio" name="feedSumma").form-feed__radio-input
@@ -37,6 +54,8 @@ form(action="").form-feed
         svg
           use(href="#pick-area-icon")
       .form-feed__summa 100
+        svg
+          use(href="#dollar-icon")
 
     label
       input(type="radio" name="feedSumma").form-feed__radio-input
@@ -44,6 +63,8 @@ form(action="").form-feed
         svg
           use(href="#pick-area-icon")
       .form-feed__summa 50
+        svg
+          use(href="#dollar-icon")
 
     label
       input(type="radio" name="feedSumma").form-feed__radio-input
@@ -51,6 +72,8 @@ form(action="").form-feed
         svg
           use(href="#pick-area-icon")
       .form-feed__summa 25
+        svg
+          use(href="#dollar-icon")
 
 
   .form-feed__input-container
@@ -60,11 +83,11 @@ form(action="").form-feed
 
   .form-feed__radio-container
     label.form-feed__checkbox
-      input(type="radio" name='period')
+      input(type="radio" name='period' id="feedMonthly")
       span.icon
       span.name Monthly
 
     label.form-feed__checkbox
-      input(type="radio" name='period')
+      input(type="radio" name='period' id="feedOnce" checked="true")
       span.icon
       span.name Once

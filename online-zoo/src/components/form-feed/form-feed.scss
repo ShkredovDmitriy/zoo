@@ -8,6 +8,7 @@
 
 .form-feed__amount {
   margin-right: auto;
+  padding-left: 0.1875rem;
   font-family: $font-main-regular;
   font-size: 1rem;
   line-height: 1.375rem;
@@ -22,8 +23,8 @@
   margin-top: 1.0625rem;
   height: 1.6875rem;
   padding-top: 0.5rem;
-  padding-left: 0.6875rem;
-  padding-right: 0.6875rem;
+  padding-left: 1.625rem;
+  padding-right: 1.875rem;
   background-color: #404950;
   border-radius: 2px;
 
@@ -33,7 +34,7 @@
     position: absolute;
     top: 0.75rem;
     left: 50%;
-    width: calc(100% - 1.5rem);
+    width: calc(100% - 3.75rem);
     height: 0.125rem;
     background-color: #72828E;
     transform: translateX(-50%)
@@ -62,8 +63,11 @@
 
   &:checked + * + .form-feed__summa {
     color: #FE9013;
-  }
 
+    svg {
+      fill: #FE9013;
+    }
+  }
 }
 
 .form-feed__pick-area {
@@ -85,18 +89,30 @@
 
 .form-feed__summa {
   position: absolute;
-  left: 0;
-  top: 1.75rem;
+  left: -0.9375rem;
+  top: 1.9375rem;
   font-family: $font-main-medium;
   font-size: 1.625rem;
   line-height: 1.4;
   color: #333B41;
   transition: color 0.3s;
+
+  svg {
+    display: block;
+    position: absolute;
+    left: -0.75rem;
+    top: 0.5rem;
+    width: 0.625rem;
+    height: 1.25rem;
+    display: block;
+    fill: #333B41;
+    transition: fill $transition-base;
+  }
 }
 
 .form-feed__input-container {
   position: relative;
-  margin-top: 6rem;
+  margin-top: 6.125rem;
   width: 16.75rem;
   height: 3.375rem;
 
@@ -107,6 +123,7 @@
     display: block;
     width: 0.625rem;
     height: 1.25rem;
+    fill: #929699;
   }
 }
 
@@ -129,11 +146,17 @@
     -webkit-appearance: none;
     margin: 0;
   }
+
+  &::placeholder {
+    color: #929699;
+    opacity: 1;
+  }
 }
 
 .form-feed__radio-container {
   display: flex;
   margin-top: 1.5625rem;
+  margin-right: 1rem;
 }
 
 .form-feed__checkbox {

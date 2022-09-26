@@ -45,10 +45,16 @@
 }
 
 .testimonial-card__user-location {
+  display: flex;
   font-family: $font-main-light;
   font-size: 15px;
   line-height: 1.2;
   color: #BDBDBD;
+
+  span:nth-child(2) {
+    margin-left: 7px;
+    margin-right: 7px;
+  }
 }
 
 .testimonial-card__user-data {

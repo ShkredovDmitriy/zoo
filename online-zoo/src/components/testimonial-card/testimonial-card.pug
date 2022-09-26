@@ -6,5 +6,8 @@ mixin testimonial-card(props)
           img(src=props.avatar, alt="")
         .testimonial-card__user-data
           .testimonial-card__user-name=props.name
-          .testimonial-card__user-location=props.location
+          .testimonial-card__user-location
+            span=props.location
+            span •
+            span=props.date
       .testimonial-card__content!=props.content

@@ -11,6 +11,27 @@
   padding-bottom: 11.25rem;
 }
 
+.information__header {
+  margin-bottom: 0.625rem;
+  color: $color-white;
+}
+
+.information__subtitle {
+  font-family: $font-main-medium;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  color: $color-white;
+}
+
+.information__title {
+  margin-top: 2.875rem;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 130%;
+  color: #FE9013;
+}
+
 .information__container {
   display: flex;
   flex-direction: column;
@@ -26,8 +47,20 @@
   padding-right: 5.75rem;
 }
 
+.information__container-title {
+  margin-bottom: 1.25rem;
+  padding-right: 0.75rem;
+  color: #FE9013;
+}
+
+.information__container-subtitle {
+  width: 100%;
+  color: #333B41;
+}
+
 .information__button {
-  margin-top: 1.9375rem;
+  margin-top: 1.875rem;
+  margin-left: 0.3125rem;
 }
 
 .information__text-body {
@@ -35,8 +68,9 @@
 }
 
 .information__visual-container {
-  margin-top: 3.75rem;
+  margin-top: 3.6875rem;
   display: flex;
+  padding-right: 0.875rem;
 }
 
 .information__visual-count {

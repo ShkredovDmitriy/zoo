@@ -7,7 +7,27 @@
   background-size: contain;
   background-position: 0 0;
   background-repeat: no-repeat;
+  background-color: #fff;
   overflow: hidden;
+  cursor: pointer;
+
+  &:hover {
+    .pet-card__image {
+      img {
+        transform-origin: 50% 50%;
+        transform: scale(1.1);
+      }
+    }
+
+    .pet-card__content {
+      background-color: rgba(0,0,0,0.5);
+      transform: translateY(-100%);
+    }
+
+    .pet-card__name, .pet-card__region {
+      color: #fff;
+    }
+  }
 }
 
 .pet-card__image {
@@ -16,21 +36,25 @@
   border-top-left-radius: 0.2813rem;
   border-top-right-radius: 0.2813rem;
   overflow: hidden;
-
   img {
     display: block;
     width:  22.75rem;
     height: 22.75rem;
     border-top-left-radius: 0.2813rem;
     border-top-right-radius: 0.2813rem;
+    transition: transform 0.3s;
   }
 }
 
 .pet-card__content {
+  position: relative;
   height: 3.75rem;
   padding-top: 0.5rem;
   padding-left: 1rem;
   background-repeat: no-repeat;
+  transform: translateY(0);
+  transition: transform 0.3s, background-color 0.3s;
+  z-index: 1;
 
   &.banana-bamboo {
     background-image: url('/images/banana-bamboo_icon.svg');
@@ -49,6 +73,7 @@
   line-height: 1.4;
   color: #000;
   text-transform: uppercase;
+  transition: color 0.3s;
 }
 
 .pet-card__region {
@@ -56,4 +81,5 @@
   font-size: 0.9375rem;
   line-height: 1.2;
   color: #000;
+  transition: color 0.3s;
 }
